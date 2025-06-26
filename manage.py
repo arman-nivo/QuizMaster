@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 # Load the dataset from Google Sheets
-file_path = "https://docs.google.com/spreadsheets/d/1vqvgWz4TCvryBEz0DzIMRdj2oqhPE_bsjNGEwOctSn0/export?format=csv"
+file_path = "https://docs.google.com/spreadsheets/d/1veRQYB_hZibBXUF_3_cKon3XiOgAkUBszhhbAXGXZyU/export?format=csv"
 
 try:
     dataset = pd.read_csv(file_path)
